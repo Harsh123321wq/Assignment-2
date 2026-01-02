@@ -1,1 +1,18 @@
+CUSTOMERS:
+Records processed: 25
+Duplicates removed: 3
+Missing emails dropped: 2
+Loaded successfully: 20
+
+PRODUCTS:
+Records processed: 18
+Missing prices dropped: 2
+Null stock filled: 4
+Loaded successfully: 16
+
+SALES:
+Records processed: 30
+Duplicates removed: 2
+Invalid IDs removed: 3
+Loaded successfully: 25
 
