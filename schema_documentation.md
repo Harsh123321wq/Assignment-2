@@ -1,1 +1,5 @@
+The FlexiMart database is designed in Third Normal Form (3NF) to ensure data integrity and reduce redundancy. All tables satisfy First Normal Form (1NF) because each column contains atomic values and there are no repeating groups. Second Normal Form (2NF) is satisfied as all non-key attributes depend entirely on the primary key of their respective tables. For example, in the customers table, attributes like email and city depend only on customer_id.
 
+Third Normal Form (3NF) is achieved because there are no transitive dependencies. In the orders table, customer details are not stored repeatedly; instead, customer_id acts as a foreign key referencing the customers table. Similarly, product information is stored only in the products table and referenced through order_items.
+
+Functional dependencies are clearly defined, such as customer_id → customer attributes and product_id → product attributes. This design avoids update anomalies (updating product price in one place), insertion anomalies (adding a product without an order), and deletion anomalies (deleting an order does not remove customer data). Hence, the schema is efficient, consistent, and scalable.
